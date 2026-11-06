@@ -73,7 +73,7 @@ export default function Detalhe() {
       {erro && <p className="erro">{erro}</p>}
 
       <div className="linha">
-        {/* resolvido não pode ser editado */}
+        {}
         {chamado.status !== "resolvido" && (
           <Link className="botao" to={`/editar/${id}`}>Editar</Link>
         )}
