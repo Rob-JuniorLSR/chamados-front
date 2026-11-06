@@ -73,14 +73,14 @@ export default function Detalhe() {
       {erro && <p className="erro">{erro}</p>}
 
       <div className="linha">
-        {}
+        
         {chamado.status !== "resolvido" && (
           <Link className="botao" to={`/editar/${id}`}>Editar</Link>
         )}
         <button className="vermelho" onClick={excluir}>Excluir</button>
       </div>
 
-      {}
+      
       {chamado.status !== "resolvido" && (
         <form onSubmit={proximaEtapa} className="etapa">
           <h2>Próxima etapa</h2>
